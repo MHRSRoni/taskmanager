@@ -59,7 +59,7 @@ exports.signup = async (req, res, next) => {
                         to : email,
                         from : "TaskManager",
                         subject : "tests",
-                        text : `<a href="http://localhost:4000/verify/${link}">click here</a>`,
+                        text : `https://taskmanager-py5i.onrender.com/verify/${link}`,
                         type : "html"
                        })
                     return res.json({msg : "check your email for verification",link})
